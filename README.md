@@ -22,4 +22,4 @@ This Android application utilizes various features and libraries to enhance user
 [Open Video](https://youtu.be/rf5MMwU9gMA)
 
 ## .Apk File
-[Link to Download]()
+[Link to Download](https://github.com/Shivu1126/Pharm-SANeForce/blob/master/pharm-app.apk)
