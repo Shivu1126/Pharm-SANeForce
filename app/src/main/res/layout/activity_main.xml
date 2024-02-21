@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/text_dark">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reports"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center_vertical"/>
+
+    </androidx.appcompat.widget.Toolbar>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/day_report_card"
+        android:layout_width="250dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/tool_bar"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/day_report_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/day_report"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/day_report_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Day Report"
+                android:layout_below="@id/day_report_icon"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_dark"/>
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>
